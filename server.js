@@ -30,7 +30,7 @@ const _ = require('lodash');
 const zip = require('express-zip');
 const driveIO = require('google-drive-io');
 const app = express();
-
+const util = require('util');
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
 const ios = require('socket.io-express-session');
